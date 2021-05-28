@@ -9,4 +9,8 @@ INNER JOIN film_genre ON genres.id=film_genre.genre_id
 INNER JOIN films ON film_genre.film_id=films.id 
 WHERE films.id=4;
 
+SELECT title from films
+INNER JOIN film_genre ON films.id=film_genre.film_id
+INNER JOIN genres ON film_genre.genre_id=genres.id
+WHERE genres.id=3
 
